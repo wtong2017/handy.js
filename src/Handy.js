@@ -328,7 +328,7 @@ Object.assign( Handy.protos, {
 		const hand = this
 		this.traverse( function( obj ){
 
-			if( obj.xrInputSource !== undefined &&
+			if( obj.xrInputSource !== undefined && obj.xrInputSource !== null &&
 				obj.xrInputSource.handedness !== undefined ){
 
 				hand.handedness = obj.xrInputSource.handedness
